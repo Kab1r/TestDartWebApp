@@ -2,18 +2,22 @@ language: dart
 dart:
  - dev
 
+stages:
+  - setup
+  - build
+  - deploy
 jobs:
   include:
     - stage: setup
       script: pub global activate webdev
     - stage: build
       script: webdev build
-
-
-deploy:
-  provider: pages
-  github-token: $GITHUB_TOKEN
-  keep-history: true
-  local-dir: build
-  on:
-    branch: master
+    - stage: deploy
+      script: skip
+      deploy:
+        provider: pages
+        github-token: $GITHUB_TOKEN
+        keep-history: true
+        local-dir: build
+        on:
+          branch: master
