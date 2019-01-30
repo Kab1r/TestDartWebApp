@@ -4,6 +4,8 @@ dart:
 
 jobs:
   include:
+    - stage: setup
+      script: pub global activate webdev
     - stage: build
       script: webdev build
 
