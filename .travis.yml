@@ -2,14 +2,19 @@ language: dart
 dart:
  - dev
 
+before_install:
+  - chmod +x build.sh
+
 stages:
   - setup
   - build
   - deploy
+
 jobs:
   include:
     - stage: build
       script: ./build.sh
+
 deploy:
   provider: pages
   github-token: $GITHUB_TOKEN
