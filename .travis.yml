@@ -16,6 +16,7 @@ deploy:
   skip-cleanup: true
   github-token: $GITHUB_TOKEN
   keep-history: true
+  fqdn: dart.kwatra.me
   local-dir: build
   on:
     branch: master
