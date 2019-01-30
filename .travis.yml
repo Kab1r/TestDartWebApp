@@ -2,6 +2,12 @@ language: dart
 dart:
  - dev
 
+jobs:
+  include:
+    - stage: build
+      script: webdev build
+
+
 deploy:
   provider: pages
   github-token: $GITHUB_TOKEN
