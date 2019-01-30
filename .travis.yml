@@ -3,17 +3,13 @@ dart:
  - dev
 
 before_install:
-  - chmod +x build.sh
+  - pub global activate webdev
 
-stages:
-  - setup
-  - build
-  - deploy
 
 jobs:
   include:
     - stage: build
-      script: ./build.sh
+      script: webdev build
 
 deploy:
   provider: pages
