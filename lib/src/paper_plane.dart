@@ -8,8 +8,10 @@ class PaperPlane {
     _score++;
     return _state = 0;
   }
-  getStateName() {
-    return "pa" + (_state + 1).toString();
+  getImgUrl() {
+    return 'assets/sprites/paper/pa'
+      + (_state + 1).toString()
+      + '.png';
   }
   getScore() {
     return _score;
