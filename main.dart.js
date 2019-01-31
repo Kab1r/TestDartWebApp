@@ -1918,8 +1918,7 @@ return u},
 aX:function aX(a,b,c){this.a=a
 this.b=b
 this.c=c},
-a9:function a9(a){this.a="Title"
-this.b=a}},D={aj:function aj(a,b,c,d,e){var _=this
+a9:function a9(a){this.a=a}},D={aj:function aj(a,b,c,d,e){var _=this
 _.a=a
 _.b=b
 _.c=c
@@ -5115,7 +5114,7 @@ t=W.f
 J.k1(this.z,"click",this.d_(this.gcf(),t,t))
 this.d3(C.i,null)},
 al:function(){var u,t,s,r,q
-u=this.f.b
+u=this.f.a
 t=Q.iN("assets/sprites/paper/pa"+C.c.i(u.a+1)+".png")
 s=this.r
 if(s!==t){this.z.src=$.dt.c.bI(t)
@@ -5126,7 +5125,7 @@ this.x=r}q=Q.iN(u.b)
 u=this.y
 if(u!==q){this.ch.textContent=q
 this.y=q}},
-cg:function(a){this.f.b.d2()},
+cg:function(a){this.f.a.d2()},
 $aN:function(){return[Q.a9]}}
 V.hW.prototype={
 ak:function(){var u,t,s,r,q,p
