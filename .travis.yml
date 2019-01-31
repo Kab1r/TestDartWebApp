@@ -4,12 +4,13 @@ dart:
 
 before_install:
   - pub global activate webdev
+  #- pub global activate peanut
 
 
 jobs:
   include:
     - stage: build
-      script: webdev build
+      script: webdev build --fast-startup --minify
 
 deploy:
   provider: pages
