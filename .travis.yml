@@ -10,7 +10,7 @@ before_install:
 jobs:
   include:
     - stage: build
-      script: webdev build --fast-startup --minify
+      script: webdev build
 
 deploy:
   provider: pages
