@@ -1,5 +1,6 @@
-<li (click)="plane.incrementState()">
-    <img src="{{plane.getImgUrl()}}">
+<body>
+    <img src="{{plane.getImgUrl()}}"
+    (click)="plane.incrementState()"><br>
     <span>State: {{plane.getState()}}</span><br>
     <span>Score: {{plane.getScore()}}</span>
-</li>
+</body>
