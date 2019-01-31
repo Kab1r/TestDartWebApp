@@ -1,4 +1,9 @@
 .packages
+assets/sprites/paper/pa1.png
+assets/sprites/paper/pa2.png
+assets/sprites/paper/pa3.png
+assets/sprites/paper/pa4.png
+assets/sprites/paper/pa5.png
 favicon.png
 index.html
 main.dart.js
