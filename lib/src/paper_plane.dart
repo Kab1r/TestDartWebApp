@@ -1,7 +1,10 @@
 class PaperPlane {
   int _state = 0;
   int _score = 0;
+  // Single line Methods
   getState() => _state;
+  getScore() => _score;
+
   incrementState() {
     if (_state < 4)
       return ++_state;
@@ -13,9 +16,6 @@ class PaperPlane {
       + (_state + 1).toString()
       + '.png';
   }
-  getScore() {
-    return _score;
-  }
-
+  // No Args Constructor
   PaperPlane();
 }

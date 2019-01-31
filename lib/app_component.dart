@@ -6,6 +6,5 @@ import 'src/paper_plane.dart';
   templateUrl: 'app_component.html',
 )
 class AppComponent {
-  final title = 'Title';
   PaperPlane plane = PaperPlane();
 }
