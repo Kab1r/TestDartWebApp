@@ -1,10 +1,11 @@
 import 'package:angular/angular.dart';
-import 'src/paper_plane.dart';
+import 'planez.dart';
+import 'dart:html';
 
 @Component(
-  selector: 'plane',
+  selector: 'planez',
   templateUrl: 'app_component.html',
 )
 class AppComponent {
-  PaperPlane plane = PaperPlane();
+  Planez planez = Planez(document.querySelector("#gamecontainer"));
 }

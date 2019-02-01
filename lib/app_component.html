@@ -1,6 +1,9 @@
 <body>
-    <img src="{{plane.getImgUrl()}}"
-    (click)="plane.incrementState()"><br>
-    <span>State: {{plane.getState()}}</span><br>
-    <span>Score: {{plane.getScore()}}</span>
+  <img
+    src="{{ planez.clicker.getImgUrl() }}"
+    (click)="planez.incrementState()"
+    width="{{ planez.clicker.width }}"
+    height="{{ planez.clicker.height }}"
+  /><br />
+  <span>Score: {{ planez.getScore() }}</span>
 </body>
